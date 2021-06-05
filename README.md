@@ -24,6 +24,13 @@ Or install it yourself as:
 
 TODO: Write usage instructions here
 
+```ruby
+
+octopush = Octopush.new(:email => 'your_email_address', :api_key => 'your_api_key') #creates a new octopush object
+octopush.send_sms(:text => 'body of your text', :number => '+12345678') #send sms to the given number
+
+``` 
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
